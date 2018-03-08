@@ -56,55 +56,56 @@
             
 
       <div class="starter-template">
-        <h2>Viagem Havai</h2>
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th>Tipo</th>
-              <th>Data</th>
-              <th>Descrição</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Voo</td>
-              <td>10/07/2018</td>
-              <td>Voo Fortaleza - Havaí</td>
-            </tr>
-            <tr>
-              <td>Hospedagem</td>
-              <td>11/07/2018</td>
-              <td>Entrada no hotel Hawaii Inn</td>
-            </tr>
-            <tr>
-              <td>Atração Turística</td>
-              <td>12/07/2018</td>
-              <td>Campeonato Mundial de Surfe</td>
-            </tr>
-            <tr>
-              <td>Atração Turística</td>
-              <td>14/07/2018</td>
-              <td>Passeio de barco</td>
-            </tr>
-            <tr>
-              <td>Voo</td>
-              <td>15/07/2018</td>
-              <td>Voo Havai - Fortaleza</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Novo Item
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="novoVoo.html">Voo</a>
-            <a class="dropdown-item" href="#">Hospedagem</a>
-            <a class="dropdown-item" href="#">Atração Turística</a>
-            <a class="dropdown-item" href="#">Trem</a>
-            <a class="dropdown-item" href="#">Nota de Viagem</a>
+        <h2>Novo Voo</h2>
+        
+        <form>
+          <div class="form-group">
+            <label for="companhia">Companhia Aérea</label>
+            <select class="form-control" id="companhia">
+              <option>Selecione</option>
+              <option>Avianca</option>
+              <option>Azul</option>
+              <option>Gol</option>
+              <option>Latam</option>
+              <option>TAP</option>
+            </select>
           </div>
-        </div>
+          <label for="reserva">Código da Reserva</label>
+          <div class="input-group mb-3 ">
+            <input type="text" class="form-control" placeholder="Código" aria-label="Código da reserva" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2"><button class="btn btn-secondary">Buscar</button></span>
+            </div>
+          </div>
+          <div class="input-group mb-2">
+              <label for="origem" class="form-control">Cidade de Origem</label>
+              <label for="destino" class="form-control">Cidade de Destino</label>
+          </div> 
+          <div class="input-group mb-2 ">
+              <select class="form-control" id="origem">
+                  <option>Selecione</option>
+                  <option>Fortaleza</option>
+                  <option>Rio de Janeiro</option>
+                  <option>São Paulo</option>
+                  <option>Orlando</option>
+                  <option>Amsterdam</option>
+                </select>
+                <select class="form-control" id="destino">
+                    <option>Selecione</option>
+                    <option>Fortaleza</option>
+                    <option>Rio de Janeiro</option>
+                    <option>São Paulo</option>
+                    <option>Orlando</option>
+                    <option>Amsterdam</option>
+                  </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="dataPartida">Data do Voo</label>
+                <input type="date" class="form-control" id="dataPartida">
+            </div>
+            <button class="btn btn-primary" type="submit">Salvar Voo</button>
+        </form>
       </div>
 
     </main><!-- /.container -->
